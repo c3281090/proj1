@@ -4,6 +4,9 @@ int main() {
     
     //variables
     int option; //Option chosen by user
+    int key;
+    char message;
+    char chiper;
 
     //Ask for option from list
     printf("Please choose an option between 1 [ONE] and 6 [SIX] \n");
@@ -53,9 +56,21 @@ int main() {
 
 //1. Get message, and rotation key, encrypt
 
+    printf("Please enter your message to be encrypted \n");
+    scanf("%d", &message);
+    printf("Now enter the rotation key \n");
+    scanf("%d", &key);
+
+
 
 
 //2. Get cipher text and rotation key, decrypt
+
+    printf("Please enter cipher to be decrypted \n");
+    scanf("%d", &cipher);
+    printf("Now enter the rotation key \n");
+    scanf("%d", &key);
+
 
 
 
@@ -69,8 +84,7 @@ int main() {
 
 //5. Get cipher text, use rotation to decrypt
 
-
-
+ 
 //6. Get cipher text, use substituion to decrypt
 
-
+   
