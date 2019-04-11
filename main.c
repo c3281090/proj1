@@ -1,24 +1,27 @@
 #include <stdio.h>
 
+
+
+
 int main() {
-    //abcd
-    //abcd
-    //abcd
-    //abcd
+    //variables
+    int op; //Option chosen by user
     
-    //test code from videos
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-    printf("Found integers %d %d %d \n", a, b, c);
-  
+    
+    //Ask for option from list
+    printf("Please choose an option between 1 [ONE] and 6 [SIX] \n");
+    
+    
+    scanf("%d", &op);
+    
+    //Call required  function using switch/case 
+    
+    
+    
+    
 }
 
 
-//Choose option from list
-
-
-
-//Call required  function 
 
 
 
