@@ -13,7 +13,7 @@ int main() {
     //variables
     int option; //Option chosen by user
    // int key;
-  //  char message;
+  //  char message[1000], ch;
    // char chiper;
     
     //Ask for option from list
