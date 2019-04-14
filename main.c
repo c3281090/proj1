@@ -12,9 +12,9 @@ int main() {
     
     //variables
     int option; //Option chosen by user
-   // int key;
-  //  char message[1000], ch;
-   // char chiper;
+    int rotaitonkey;
+    //char message[1000], message;
+    //char chiper[1000], chiper;
     
     //Ask for option from list
     printf("Please choose an option between 1 [ONE] and 6 [SIX] \n");
@@ -66,6 +66,21 @@ int main() {
 //1. Get message, and rotation key, encrypt
  int exampleOne(int option){
      printf("Option 1 chosen \n");
+        
+    int i, rotationKey;
+    char message[1000];
+   
+    printf("Please enter a your message to be encrypted \n");
+    scanf("%s", &message);
+    
+    printf("Please enter a rotation key \n");
+    scanf("%d", &rotationKey);
+   
+   
+    for(i = 0; (i < 100 && message[i] != '\0'); i++)
+        message[i] = message[i] + rotationKey; 
+
+    printf("The encrypted message is %s\n", message);
  }
 
 //2. Get cipher text and rotation key, decrypt 
@@ -97,11 +112,6 @@ int main() {
 
 
 
-    //printf("Please enter your message to be encrypted \n");
-    //scanf("%d", &message);
-    //printf("Now enter the rotation key \n");
-    //scanf("%d", &key);
-    
 
 
 
